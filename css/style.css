@@ -1,0 +1,211 @@
+/* h1 {
+    color: red;
+} */
+
+
+/* -- Geral -- */
+body {
+    font-family: Arial, Helvetica, sans-serif;/* Ajuste de fontes com ordem de prioridade da esquerda para a direita */
+}
+
+.row {
+    margin: 0;/* Ajuste para margem 0 na classe row "linha" */
+}
+
+.container {
+    padding: 70px 0;/* Preenchimento de 70px acima e abaixo; 0px esquerda e direita */
+}
+
+p, li {
+    color: #444;/* Ajuste da cor da fonte */
+    font-size: 14px;/* Ajuste do tamanho da fonte */
+}
+
+
+/* -- Navbar -- */
+header, .navbar {
+    background-color: #353D41;/* Ajuste da cor do fundo */
+}
+
+#nav-header {
+    padding-top: 0;/* Preenchimento superior */
+    padding-bottom: 0;/* Preenchimento inferior */
+}
+
+#logo {
+    width: 100px;/* Ajuste da largura da logo */
+}
+
+.navbar-brand {
+    padding: 0;/* Preenchimento superior, inferior, esquerda e direita */
+    color: #ffffff;/* Ajuste da cor da fonte */
+}
+
+.navbar-brand:hover {
+    color: #ffffff;/* Ajuste da cor da fonte */
+}
+
+#navbar-links a {
+    color: #ffffff;/* Ajuste da cor da fonte */
+}
+
+#navbar-links a:hover {
+    color: #d3d3d3;/* Ajuste da cor da fonte */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;/* Preenchimento relativo ao tamanho da fonte de 1rem acima e abaixo; 0,8rem esquerda e direita */
+}
+
+/* -- Carousel -- */
+.container-fluid {
+    padding: 0;/* Preenchimento superior, inferior, esquerda e direita */
+}
+  
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;/* Altura relativa a tela (ocupa 90% da tela) */
+}
+  
+#mainSlider .carousel-caption {
+    top: 30%;/* Afeta a posição horizontal do elemento */
+}
+  
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;/* Ajuste do tamanho da fonte */
+    margin-bottom: 30px;/* Margem inferior de 30px */
+}
+  
+#mainSlider .carousel-caption p {
+    font-size: 22px;/* Ajuste do tamanho da fonte */
+    font-weight: 300;/* Auste de fonte fina */
+    margin-bottom: 100px;/* Margem inferior de 30px */
+    color: #FFF;/* Ajuste da cor da fonte */
+}
+  
+.main-btn {
+    background-color: #65DAF9;/* Ajuste da cor do fundo */
+    color: #FFF;/* Ajuste da cor da fonte */
+    text-transform: uppercase;/* Texto em caixa-alta */
+    width: 200px;/* Ajuste de largura */
+    height: 60px;/* Ajuste de altura */
+    padding: 10px 20px;/* Preenchimento de 10px acima e abaixo; 20px esquerda e direita */
+    border-radius: 30px;/* Raio de curvatura da borda */
+    border: 3px solid transparent;/* Borda de 3px solida e sem cor */
+    transition: .5s;/* 0,5 segundos para realizar o efeito */
+}
+  
+.main-btn:hover {
+    text-decoration: none;/* Sem decoração */
+    color: #FFF;/* Ajuste da cor da fonte */
+    background-color: transparent;/* Ajuste da cor do fundo */
+    border-color: #3EC1D5;/* Cor da borda */
+}
+  
+.carousel-indicators .active {
+    background-color: #65DAF9;/* Ajuste da cor do fundo */
+}
+
+
+/* --  Sobre Nós  -- */
+#about-area {
+    background-color: #F9F9F9;/* Ajuste da cor do fundo */
+}
+  
+.main-title {
+    color: #444;/* Ajuste da cor da fonte */
+    margin: 0 0 65px 0;/* Margem 0px no topo, 0px na direita, 0px inferior e 0px na esquerda */
+    font-size: 40px;/* Ajuste do tamanho da fonte */
+    text-align: center;/* Alinhamento do texto */
+}
+  
+.main-title::after {
+    content: "";/* Sem conteúdo, apenas a borda */
+    border-top: 2px solid #333;/* Borda de 2px solida e com a cor #333 */
+    width: 15%;/* Largura de 15% da tela */
+    position: absolute;/* Posição absoluta */
+    top: 60px;/* Afeta a posição horizontal do elemento */
+    left: 42.5%;/* Afeta a posição vertical do elemento */
+}
+  
+.about-title {
+    font-size: 17px;/* Ajuste do tamanho da fonte */
+    color: #444;/* Ajuste da cor da fonte */
+    text-transform: uppercase;/* Texto em caixa-alta */
+    font-weight: bold;/* fonte em negrito */
+}
+
+  
+#about-list li {
+    line-height: 30px;/* Altura da linha */
+}
+  
+#about-list i {
+    color: #65DAF9;/* Ajuste da cor da fonte */
+    margin-right: 15px;/* Margem a direita de 15px */
+}
+
+/* -- Footer -- */
+.dark {
+    background-color: #353D41;/* Ajuste da cor do fundo */
+    color: #ffffff;/* Ajuste da cor da fonte */
+}
+
+.list-unstyled .link {
+    text-decoration: none;/* Sem decoração */
+    color: #ffffff;/* Ajuste da cor da fonte */
+}
+
+
+/* -- Responsive -- */
+@media(max-width: 768px) {
+
+    /* -- Geral -- */
+    .container {
+        padding: 20px 0;/* Preenchimento de 20px acima e abaixo; 0px esquerda e direita */
+    }
+    
+    /* -- Carousel -- */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;/* Ajuste de altura automático */
+    }
+  
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;/* Ajuste do tamanho da fonte */
+    }
+  
+    #mainSlider .carousel-caption p {
+        font-size: 18px;/* Ajuste do tamanho da fonte */
+        margin-bottom: 40px;/* Margem inferior de 40px */
+    }
+
+    .carousel-caption {
+        /* Posição absoluta */
+        left: 50%;/* Afeta a posição horizontal do elemento */
+        right: 10%;/* Afeta a posição horizontal do elemento */
+    }
+}
+
+@media(max-width: 425px) {
+
+    /* -- Carousel -- */
+    #mainSlider {
+      margin-top: 90px;/* Margem superior de 90px */
+    }
+  
+    #mainSlider .carousel-caption {
+      top: 5%;/* Afeta a posição vertical do elemento */
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 18px;/* Ajuste do tamanho da fonte */
+      margin-bottom: 40px;/* Margem inferior de 40px */
+    }
+  
+    #mainSlider .carousel-caption p {
+      display: none;/* Esconder uma classe */
+    }
+  
+    .carousel-caption .main-btn {
+      font-size: 14px;/* Ajuste do tamanho da fonte */
+    }
+}
